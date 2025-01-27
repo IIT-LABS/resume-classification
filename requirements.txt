@@ -1,0 +1,6 @@
+PyPDF2
+pdfplumber
+spacy
+pandas
+python-docx
+word2number
