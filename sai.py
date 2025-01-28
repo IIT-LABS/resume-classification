@@ -183,7 +183,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
   #Set up the path to your background image
-background_image_path = "C:\Users\shiva\Downloads\ai.jpeg"
+background_image_path = "C:/Users/shiva/Downloads/ai.jpeg"
 
 # Check if the file exists
 if not os.path.exists(background_image_path):
