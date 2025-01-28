@@ -183,7 +183,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
   # Define the background image path
-background_path = r"C:/Users/shake/Downloads/deployment code/deployment code/background.jpg"
+background_path = r"C:\Users\shake\Downloads\assets_files"
 
 # Initialize encoded_background with a default empty value
 encoded_background = ""
@@ -210,7 +210,7 @@ else:
         unsafe_allow_html=True
     )
 # Path to your logo
-logo_path = "C:/Users/shake/Downloads/deployment code/deployment code/innosoullogo.jpeg"
+#logo_path = "C:/Users/shake/Downloads/deployment code/deployment code/innosoullogo.jpeg"
 
 
 # Encode the logo image to base64
@@ -218,7 +218,7 @@ import os
 import base64
 
 # Corrected file path (use raw string `r""` or double slashes)
-logo_path = r"C:/Users/shake/Downloads/deployment code/deployment code/innosoullogo.jpeg"
+logo_path = r"C:\Users\shake\Downloads\assets_files"
 
 # Initialize encoded_logo with a default empty value
 encoded_logo = ""
@@ -304,7 +304,7 @@ if st.button("Analyze Resume", key="analyze", help="Click to analyze the resume 
                             resume_text = extract_text_from_docx(file)
                     else:
                         continue
- 
+ ,
                 resume_details = extract_details(resume_text, job_description_input)
                 st.session_state.results.append(resume_details)
  
