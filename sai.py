@@ -208,8 +208,20 @@ logo_path = "C:/Users/shake/Downloads/deployment code/deployment code/innosoullo
 
 
 # Encode the logo image to base64
-with open(logo_path, "rb") as logo_file:
-    encoded_logo = base64.b64encode(logo_file.read()).decode()
+import os
+import base64
+
+# Corrected file path (use raw string `r""` or double slashes)
+logo_path = r"C:/Users/shake/Downloads/deployment code/deployment code/innosoullogo.jpeg"
+
+# Check if the file exists
+if os.path.exists(logo_path):
+    with open(logo_path, "rb") as logo_file:
+        encoded_logo = base64.b64encode(logo_file.read()).decode()
+        print("✅ Logo file loaded successfully!")
+else:
+    print(f"❌ Error: File not found at {logo_path}")
+
 
 # Add the header with logo and navigation links
 st.markdown(
