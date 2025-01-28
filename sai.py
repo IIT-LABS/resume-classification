@@ -200,7 +200,7 @@ else:
         f"""
         <style>
         body {{
-            background-image: url("file://{background_image_path}");
+            background-image: url("file://{background_path}");;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
