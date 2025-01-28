@@ -204,7 +204,7 @@ else:
         unsafe_allow_html=True
     )
 # Path to your logo
-logo_path = "C:Users/shake/Downloads/deployment code/deployment code/innosoullogo.jpeg"
+logo_path = r"C:Users/shake/Downloads/deployment code/deployment code/innosoullogo.jpeg"
 
 # Encode the logo image to base64
 with open(logo_path, "rb") as logo_file:
