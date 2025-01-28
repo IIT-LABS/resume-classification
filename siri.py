@@ -137,7 +137,7 @@ st.markdown(
     """
     <style>
         body {
-            background-image: url("file:///C:/Users/shiva/Downloads/ai.jpeg"); /* Set the background image */
+            background-image: url("C:/Users/shake/Downloads/deployment code/deployment code/ai.jpeg"); /* Set the background image */
             background-size: cover; /* Ensure the background image covers the entire page */
             background-position: center;
             color: white; /* Text color should contrast with the background */
