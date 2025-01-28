@@ -183,7 +183,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
   #Set up the path to your background image
-background_image_path = "C:/Users/shiva/Downloads/ai.jpeg"
+background_image_path = "C:/Users/shake/Downloads/deployment code/deployment code/ai.jpeg"
 
 # Check if the file exists
 if not os.path.exists(background_image_path):
@@ -204,7 +204,7 @@ else:
         unsafe_allow_html=True
     )
 # Path to your logo
-logo_path = "C:/Users/shiva/Downloads/innosoullogo (1) (1).jpeg"
+logo_path = "C:/Users/shake/Downloads/deployment code/deployment code/innosoullogo (1) (1).jpeg"
 
 # Encode the logo image to base64
 with open(logo_path, "rb") as logo_file:
