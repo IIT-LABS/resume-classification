@@ -182,13 +182,19 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
-  #Set up the path to your background image
-background_image_path = "C:/Users/shake/Downloads/deployment code/deployment code/ai.jpeg"
+  # Define the background image path
+background_path = r"C:/Users/shake/Downloads/deployment code/deployment code/background.jpg"
 
-# Check if the file exists
-if not os.path.exists(background_image_path):
-    st.error("Background image not found. Please check the file path.")
+# Initialize encoded_background with a default empty value
+encoded_background = ""
+
+# Check if the file exists before using it
+if os.path.exists(background_path):
+    with open(background_path, "rb") as bg_file:
+        encoded_background = base64.b64encode(bg_file.read()).decode()
+        print("✅ Background image loaded successfully!")
 else:
+    print(f"❌ Error: Background image not found at {background_path}")
     # Serve the image via Streamlit's static file serving
     st.markdown(
         f"""
