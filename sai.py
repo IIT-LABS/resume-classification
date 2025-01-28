@@ -214,6 +214,9 @@ import base64
 # Corrected file path (use raw string `r""` or double slashes)
 logo_path = r"C:/Users/shake/Downloads/deployment code/deployment code/innosoullogo.jpeg"
 
+# Initialize encoded_logo with a default empty value
+encoded_logo = ""
+
 # Check if the file exists
 if os.path.exists(logo_path):
     with open(logo_path, "rb") as logo_file:
